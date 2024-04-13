@@ -61,7 +61,4 @@ public class Player : MonoBehaviour
         transform.localScale = escala;
     }
 
-    public void disableAttack()
-    {
-    }
 }
