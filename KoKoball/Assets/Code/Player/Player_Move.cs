@@ -20,6 +20,10 @@ public class Player : MonoBehaviour
     private int score;
 
 
+    [SerializeField] AudioSource playerSounds;
+    [SerializeField] AudioClip steps;
+    [SerializeField] AudioClip hurt;
+
     // Start is called before the first frame update
     void Start()
     {
