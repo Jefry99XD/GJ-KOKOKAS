@@ -17,7 +17,7 @@ public class Soccer_Ball : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("enemy"))
         {
-            Destroy(collision.gameObject.GetComponent<EnemigoNormal>().parent);
+            collision.gameObject.GetComponent<MovimientoEnemigo>().Danio();
         }
         if (collision.gameObject.CompareTag("enemyResistant"))
         {
