@@ -227,13 +227,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 101619777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9822c51dddd614bbe1c09a86198345, type: 3}
+  m_Script: {fileID: 11500000, guid: 03911d088818256449500c7b60e988d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ruta:
   - {fileID: 1984839271}
   - {fileID: 1348686234}
-  - {fileID: 2059450671}
+  - {fileID: 1816167061}
   - {fileID: 408964766}
   - {fileID: 2050725390}
   - {fileID: 1698293250}
@@ -910,13 +910,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322975582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9822c51dddd614bbe1c09a86198345, type: 3}
+  m_Script: {fileID: 11500000, guid: 03911d088818256449500c7b60e988d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ruta:
   - {fileID: 675735063}
   - {fileID: 2025091588}
-  - {fileID: 71143104}
+  - {fileID: 504086419}
   - {fileID: 17231804}
   - {fileID: 728721851}
   - {fileID: 406624563}
@@ -1014,11 +1014,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1494432669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b6523f3222fd645b0e790c72d39ceb, type: 3}
+  m_Script: {fileID: 11500000, guid: 248752b255ed66941bb1548498576505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRate: 1
-  enemyPref: []
+  enemyPref:
+  - {fileID: 175151952}
+  - {fileID: 936974645}
   spawn: 1
 --- !u!4 &1494432671
 Transform:

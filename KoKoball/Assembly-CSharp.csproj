@@ -61,12 +61,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FreePixelMob\StateRandom.cs" />
+    <Compile Include="Assets\Code\Enemy\MovimientoEnemigo.cs" />
     <Compile Include="Assets\Code\Soccer_Ball.cs" />
+    <Compile Include="Assets\Code\Enemy\spawner.cs" />
     <Compile Include="Assets\Code\Player_Attack.cs" />
     <Compile Include="Assets\FreePixelMob\Mobs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Materials\assets2\Spritesheet\spritesheet_default.xml" />
+    <None Include="Assets\Materials\Assets1\kenney_sports-pack\Spritesheet\sheet_equipment.xml" />
+    <None Include="Assets\Materials\assets2\License.txt" />
+    <None Include="Assets\Materials\assets2\Spritesheet\spritesheet_double.xml" />
     <None Include="Assets\FreePixelMob\ReadMe.txt" />
+    <None Include="Assets\Materials\Assets1\kenney_sports-pack\License.txt" />
+    <None Include="Assets\Materials\Assets1\kenney_sports-pack\Spritesheet\sheet_charactersEquipment.xml" />
+    <None Include="Assets\Materials\Assets1\kenney_sports-pack\Spritesheet\sheet_characters.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
