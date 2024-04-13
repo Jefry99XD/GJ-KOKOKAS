@@ -60,7 +60,11 @@
     <Analyzer Include="C:\Unity\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FreePixelMob\StateRandom.cs" />
     <Compile Include="Assets\Scenes\Jefry\MovimientoEnemigo.cs" />
+    <Compile Include="Assets\Code\Soccer_Ball.cs" />
+    <Compile Include="Assets\Code\Player_Attack.cs" />
+    <Compile Include="Assets\FreePixelMob\Mobs.cs" />
     <Compile Include="Assets\Scenes\Jefry\spawner.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +72,7 @@
     <None Include="Assets\Scenes\Assets1\kenney_sports-pack\Spritesheet\sheet_equipment.xml" />
     <None Include="Assets\Scenes\assets2\License.txt" />
     <None Include="Assets\Scenes\assets2\Spritesheet\spritesheet_double.xml" />
+    <None Include="Assets\FreePixelMob\ReadMe.txt" />
     <None Include="Assets\Scenes\Assets1\kenney_sports-pack\License.txt" />
     <None Include="Assets\Scenes\Assets1\kenney_sports-pack\Spritesheet\sheet_charactersEquipment.xml" />
     <None Include="Assets\Scenes\Assets1\kenney_sports-pack\Spritesheet\sheet_characters.xml" />
