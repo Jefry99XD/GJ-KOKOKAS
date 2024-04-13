@@ -19,7 +19,7 @@ public class HealhM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        healthSlider.health(health);
     }
 
     void damage(int damageV)
@@ -31,6 +31,6 @@ public class HealhM : MonoBehaviour
 
     void healing(int healingV) {
         health += healingV;
-        healthSlider.health(health);
+
     }
 }
