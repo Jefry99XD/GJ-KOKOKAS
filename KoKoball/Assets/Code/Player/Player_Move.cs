@@ -11,12 +11,14 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject attackHitBox;
     private Animator animator;
     private bool lookingLeft = true;
+    private float attackTimer = 0.5f;
+    bool attacking = false;
 
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -33,11 +35,22 @@ public class Player : MonoBehaviour
 
         animator.SetFloat("Movement", Mathf.Abs(horizontal));
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !attacking)
         {   
             attackHitBox.SetActive(true);
             animator.SetBool("attacking", true);
+            attacking = true;
+            StartCoroutine(attackCoroutine());
         }
+
+    }
+
+    IEnumerator attackCoroutine()
+    {
+        yield return new WaitForSeconds(attackTimer);
+        attacking = false;
+        attackHitBox.SetActive(false);
+        animator.SetBool("attacking", false);
     }
 
     private void girar()
@@ -50,7 +63,5 @@ public class Player : MonoBehaviour
 
     public void disableAttack()
     {
-        attackHitBox.SetActive(false);
-        animator.SetBool("attacking", false);
     }
 }
