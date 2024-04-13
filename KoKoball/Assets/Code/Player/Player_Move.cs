@@ -14,6 +14,10 @@ public class Player : MonoBehaviour
     private float attackTimer = 0.5f;
     bool attacking = false;
 
+    [SerializeField] AudioSource playerSounds;
+    [SerializeField] AudioClip steps;
+    [SerializeField] AudioClip hurt;
+
     // Start is called before the first frame update
     void Start()
     {
