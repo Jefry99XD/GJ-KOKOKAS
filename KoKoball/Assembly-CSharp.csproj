@@ -65,6 +65,7 @@
     <Compile Include="Assets\Code\Soccer_Ball.cs" />
     <Compile Include="Assets\Code\Enemy\spawner.cs" />
     <Compile Include="Assets\Code\Player_Attack.cs" />
+    <Compile Include="Assets\Code\Player\Player_Move.cs" />
     <Compile Include="Assets\FreePixelMob\Mobs.cs" />
   </ItemGroup>
   <ItemGroup>
