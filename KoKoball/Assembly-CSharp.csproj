@@ -60,20 +60,18 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.23f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FreePixelMob\StateRandom.cs" />
     <Compile Include="Assets\Code\Enemy\MovimientoEnemigo.cs" />
     <Compile Include="Assets\Code\Soccer_Ball.cs" />
     <Compile Include="Assets\Code\Enemy\spawner.cs" />
     <Compile Include="Assets\Code\Player\Player_Move.cs" />
     <Compile Include="Assets\Code\Enemy\ShooterEnemy.cs" />
-    <Compile Include="Assets\FreePixelMob\Mobs.cs" />
+    <Compile Include="Assets\Code\Enemy\EnemigoNormal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\assets2\Spritesheet\spritesheet_default.xml" />
     <None Include="Assets\Materials\Assets1\kenney_sports-pack\Spritesheet\sheet_equipment.xml" />
     <None Include="Assets\Materials\assets2\License.txt" />
     <None Include="Assets\Materials\assets2\Spritesheet\spritesheet_double.xml" />
-    <None Include="Assets\FreePixelMob\ReadMe.txt" />
     <None Include="Assets\Materials\Assets1\kenney_sports-pack\License.txt" />
     <None Include="Assets\Materials\Assets1\kenney_sports-pack\Spritesheet\sheet_charactersEquipment.xml" />
     <None Include="Assets\War\Slime Enemy - Pixel Art\README.txt" />

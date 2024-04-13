@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientoEnemigo : MonoBehaviour
+public class EnemigoNormal : MonoBehaviour
 {
     [SerializeField] Transform[] ruta;
     [SerializeField] float velocidadMovimiento;
     [SerializeField] int destino;
-    [SerializeField] float health, maxhealth = 3;
     [SerializeField] internal GameObject parent;
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,15 +22,6 @@ public class MovimientoEnemigo : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
             destino = next;
-        }
-
-    }
-    public void Danio()
-    {
-        health--;
-        if (health <= 0)
-        {
-            Destroy(parent);
         }
     }
 }

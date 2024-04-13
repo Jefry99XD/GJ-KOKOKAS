@@ -15,5 +15,13 @@ public class Soccer_Ball : MonoBehaviour
 
             GetComponent<Rigidbody2D>().velocity = direccion * kickForce;
         }
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            Destroy(collision.gameObject.GetComponent<EnemigoNormal>().parent);
+        }
+        if (collision.gameObject.CompareTag("enemyResistant"))
+        {
+            collision.gameObject.GetComponent<MovimientoEnemigo>().Danio();
+        }
     }
 }
