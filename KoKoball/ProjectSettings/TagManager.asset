@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - KickHitBox
+  - enemy
+  - bola
   layers:
   - Default
   - TransparentFX

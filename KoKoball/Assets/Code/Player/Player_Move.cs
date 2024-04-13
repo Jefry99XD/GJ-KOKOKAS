@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("Movement", Mathf.Abs(horizontal));
 
         if (Input.GetKeyDown(KeyCode.Space))
-        {
+        {   
             attackHitBox.SetActive(true);
             animator.SetBool("attacking", true);
         }
