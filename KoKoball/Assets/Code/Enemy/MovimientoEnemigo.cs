@@ -54,10 +54,10 @@ public class MovimientoEnemigo : MonoBehaviour
         if (health <= 0)
         {
             animator.SetBool("kill", true);
+            efecs.Play();
             dying = true;
             gameObject.GetComponent<Collider2D>().enabled = false;
             transform.GetChild(1).gameObject.SetActive(false);
-            efecs.Play();
             StartCoroutine(dieAnimation());
         } else
         {

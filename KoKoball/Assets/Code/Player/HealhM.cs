@@ -18,7 +18,6 @@ public class HealhM : MonoBehaviour
 
         healthMax = healthSlider.IHealthSilder();
         health = healthMax;
-        print(health);
     }
 
     // Update is called once per frame
