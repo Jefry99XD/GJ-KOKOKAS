@@ -76,5 +76,6 @@ public class MovimientoEnemigo : MonoBehaviour
         Destroy(gameObject.GetComponent<MovimientoEnemigo>());
         Destroy(gameObject);
         //Destroy(parent);
+        ScoreManager.score += 1;
     }
 }
