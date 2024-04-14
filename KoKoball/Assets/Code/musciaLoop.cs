@@ -10,7 +10,7 @@ public class musciaLoop : MonoBehaviour
     {
         GameObject[] musica = GameObject.FindGameObjectsWithTag("musica");
         if (musica.Length > 1) {
-            Destroy(this.gameObject);
+            Destroy(musica[0]);
         }
         DontDestroyOnLoad(this.gameObject);
     }
