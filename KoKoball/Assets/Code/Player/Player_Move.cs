@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private float attackTimer = 0.5f;
     bool attacking = false;
     private int score;
+    private HealhM healthManager;
 
     [SerializeField] AudioSource playerSteps;
     [SerializeField] AudioSource playerNom;
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        healthManager = GetComponent<HealhM>();
         float horizontal = Input.GetAxisRaw("Horizontal");
         Vector2 positionPlayer = transform.position;
 
@@ -81,6 +82,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("bola"))
         {
             playerHurt.Play();
+            healthManager.damage(1);
         }
     }
 }

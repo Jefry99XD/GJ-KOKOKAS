@@ -7,11 +7,13 @@ public class HealhM : MonoBehaviour
     [SerializeField]
     private int health;
     [SerializeField]
-    private int healthMax;
-    [SerializeField] private Player_health healthSlider;
+    public int healthMax;
+    [SerializeField] 
+    private Player_health healthSlider;
     // Start is called before the first frame update
     void Start()
     {
+        healthMax = 10;
         health = healthMax;
         healthSlider.IHealthSilder(health);
     }
@@ -20,17 +22,19 @@ public class HealhM : MonoBehaviour
     void Update()
     {
         healthSlider.health(health);
+      
     }
 
-    void damage(int damageV)
+    public void damage(int damageV)
     {
         health -= damageV;
         healthSlider.health(health);
     
     }
 
-    void healing(int healingV) {
-        health += healingV;
+    public void healing(int healingV) {
+        health += healingV; healthSlider.health(health);
+        healthSlider.health(health);
 
     }
 }
