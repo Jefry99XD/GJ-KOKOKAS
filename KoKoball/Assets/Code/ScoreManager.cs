@@ -15,13 +15,13 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText = GetComponent<TextMeshProUGUI>();
         score = 0;
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score " + '\n' + score;
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score " + '\n' + score;
     }
 
 
