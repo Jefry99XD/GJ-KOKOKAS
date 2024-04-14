@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
             attacking = true;
             playerNom.Play();
             StartCoroutine(attackCoroutine());
+            //healthManager.healing(1);
         }
 
     }

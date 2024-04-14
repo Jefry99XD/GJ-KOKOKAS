@@ -31,13 +31,16 @@ public class HealhM : MonoBehaviour
     public void damage(int damageV)
     {
         health -= damageV;
-        //healthSlider.health(health);
+        if (health <= 0) {
+            print("HAs perdido");
+        }
+
     
     }
 
     public void healing(int healingV) {
         health += healingV; healthSlider.health(health);
-        //healthSlider.health(health);
+       
 
     }
 }

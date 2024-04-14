@@ -13,9 +13,11 @@ public class MovimientoEnemigo : MonoBehaviour
     private bool dying = false;
     private Animator animator;
 
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+
     }
 
     // Update is called once per frame
@@ -77,5 +79,7 @@ public class MovimientoEnemigo : MonoBehaviour
         Destroy(gameObject);
         //Destroy(parent);
         ScoreManager.score += 1;
+       
+
     }
 }
