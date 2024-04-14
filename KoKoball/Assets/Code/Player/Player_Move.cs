@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class Player : MonoBehaviour
 {
+    public TextMeshProUGUI scoreText;
+
     [SerializeField]
     private float speed = 11f;
     private Rigidbody2D body;
@@ -13,6 +17,8 @@ public class Player : MonoBehaviour
     private bool lookingLeft = true;
     private float attackTimer = 0.5f;
     bool attacking = false;
+    private int score;
+
 
     [SerializeField] AudioSource playerSounds;
     [SerializeField] AudioClip steps;
@@ -23,11 +29,14 @@ public class Player : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        score = 0;
+        scoreText.text = "Score: " + score;
     }
 
     // Update is called once per frame
     void Update()
     {
+        scoreText.text = "Score: " + score;
         float horizontal = Input.GetAxisRaw("Horizontal");
         Vector2 positionPlayer = transform.position;
 
