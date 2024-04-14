@@ -29,13 +29,13 @@ public class Player : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         score = 0;
-        scoreText.text = "Score: " + score;
+        //scoreText.text = "Score: " + score;
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + score;
+        //scoreText.text = "Score: " + score;
         float horizontal = Input.GetAxisRaw("Horizontal");
         Vector2 positionPlayer = transform.position;
 
