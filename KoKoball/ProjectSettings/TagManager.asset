@@ -9,6 +9,7 @@ TagManager:
   - bola
   - DestruirDecoraCion
   - Bloque
+  - land
   layers:
   - Default
   - TransparentFX

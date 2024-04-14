@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 96501918}
   m_Layer: 0
   m_Name: bottom
-  m_TagString: Untagged
+  m_TagString: land
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 3
   enemyPref:
-  - {fileID: 4732668326753532349, guid: 1769641cc8ddc914991cc892e19159ab, type: 3}
+  - {fileID: 5817052540468448994, guid: d63a770ee34b7324ebd6e8131d256d71, type: 3}
   spawn: 1
   soccerPrefab: {fileID: 3399769402970272847, guid: 74e73da2c7daca045a2d6a33326567d5, type: 3}
   ruta:
