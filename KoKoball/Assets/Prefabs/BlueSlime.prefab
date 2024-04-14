@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1742675649
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7078261816480267791, guid: bfeede70efd14484683f5956b4f1194b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,7 +106,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &4556074439781200672
+--- !u!1 &4596839708302579855
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,41 +114,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7257124376132045213}
-  - component: {fileID: 9085837037421703284}
+  - component: {fileID: 1072576608794583484}
+  - component: {fileID: 6105833752225067018}
   m_Layer: 0
-  m_Name: enemyHit
+  m_Name: deathSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7257124376132045213
+--- !u!4 &1072576608794583484
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4556074439781200672}
+  m_GameObject: {fileID: 4596839708302579855}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.833278, y: 0.21136887, z: 0.013631666}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5545966105199656011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &9085837037421703284
+--- !u!82 &6105833752225067018
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4556074439781200672}
+  m_GameObject: {fileID: 4596839708302579855}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 1453468580345660901, guid: 8f6893f8a3e1c634fb36e9e1a0dac9d5, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 1fe54ecfbfd80304d9f7dc56690a8d2b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8b6c1014eb45dcf479203cabaadaf7db, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -266,7 +266,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6445451454467558739}
-  - {fileID: 7257124376132045213}
+  - {fileID: 1072576608794583484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6155819708557789635
@@ -301,7 +301,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.007728219, y: -0.13910928}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -312,7 +312,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2009354, y: 0.78360814}
   m_EdgeRadius: 0
 --- !u!114 &52852171924085501
 MonoBehaviour:
@@ -329,8 +329,16 @@ MonoBehaviour:
   ruta:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   velocidadMovimiento: 2
-  destino: 0
+  destino: 3
   health: 1
   maxhealth: 1
-  efecs: {fileID: 9085837037421703284}
+  efecs: {fileID: 6105833752225067018}

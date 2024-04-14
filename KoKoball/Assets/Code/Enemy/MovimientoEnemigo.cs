@@ -7,7 +7,7 @@ public class MovimientoEnemigo : MonoBehaviour
     [SerializeField] Transform[] ruta;
     [SerializeField] float velocidadMovimiento = 2;
     [SerializeField] int destino;
-    [SerializeField] float health, maxhealth = 3;
+    [SerializeField] float health = 3;
     [SerializeField] AudioSource efecs;
     //[SerializeField] internal GameObject parent;
     private bool dying = false;
@@ -17,7 +17,7 @@ public class MovimientoEnemigo : MonoBehaviour
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
-
+        efecs.volume = 1.0f;
     }
 
     // Update is called once per frame
@@ -53,11 +53,11 @@ public class MovimientoEnemigo : MonoBehaviour
         health--;
         if (health <= 0)
         {
+            efecs.Play();
             animator.SetBool("kill", true);
             dying = true;
             gameObject.GetComponent<Collider2D>().enabled = false;
-            transform.GetChild(1).gameObject.SetActive(false);
-            efecs.Play();
+            //transform.GetChild(1).gameObject.SetActive(false);
             StartCoroutine(dieAnimation());
         } else
         {

@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
             animator.SetBool("attacking", true);
             attacking = true;
             playerNom.Play();
+            transform.localScale = transform.localScale * 1.5f;
             StartCoroutine(attackCoroutine());
             //healthManager.healing(1);
         }
@@ -68,6 +69,7 @@ public class Player : MonoBehaviour
         attacking = false;
         attackHitBox.SetActive(false);
         animator.SetBool("attacking", false);
+        transform.localScale = transform.localScale / 1.5f;
     }
 
     private void girar()
