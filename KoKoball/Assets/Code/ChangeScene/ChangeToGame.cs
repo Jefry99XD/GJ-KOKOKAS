@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeToGame : MonoBehaviour
 {
@@ -15,4 +17,9 @@ public class ChangeToGame : MonoBehaviour
     {
         
     }
-}
+
+    public void Change(int id)
+    {
+        SceneManager.LoadScene(id);
+    }
+}   

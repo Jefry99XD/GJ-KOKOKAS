@@ -603,8 +603,8 @@ Transform:
   m_GameObject: {fileID: 1028987963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.67, y: 8.87, z: 0}
-  m_LocalScale: {x: 2.3053, y: 1, z: 1}
+  m_LocalPosition: {x: 10.52, y: 7.36, z: 0}
+  m_LocalScale: {x: 3.3187099, y: 1.8049, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -846,6 +846,7 @@ GameObject:
   - component: {fileID: 1791521444}
   - component: {fileID: 1791521443}
   - component: {fileID: 1791521442}
+  - component: {fileID: 1791521445}
   m_Layer: 5
   m_Name: play
   m_TagString: Untagged
@@ -900,7 +901,7 @@ MonoBehaviour:
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -916,7 +917,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1791521443}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1791521445}
+        m_TargetAssemblyTypeName: ChangeToGame, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1791521443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,6 +968,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791521440}
   m_CullTransparentMesh: 1
+--- !u!114 &1791521445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791521440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcdad712321f2744ea5b908f30ffc47d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1839005466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,8 +1213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 10.92, y: 5.15}
-  m_SizeDelta: {x: 41.8743, y: 21.7027}
+  m_AnchoredPosition: {x: 10.24, y: 4.23}
+  m_SizeDelta: {x: 51.0241, y: 23.6716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

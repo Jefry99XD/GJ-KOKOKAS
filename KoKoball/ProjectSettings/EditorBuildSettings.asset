@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/copia.unity
+    guid: 89e865129a042954d8752337d9264aba
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b87a47778b72f434a8e49c09aff96865
+  - enabled: 1
+    path: Assets/Scenes/Perder.unity
+    guid: 6b50f4bd813a17d4f864d360e1dbd1d0
   m_configObjects: {}
