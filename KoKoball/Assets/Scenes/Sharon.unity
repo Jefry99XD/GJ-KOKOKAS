@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.033018887, g: 0.6811499, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.03328854, b: 0.031372547, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -469,6 +469,9 @@ MonoBehaviour:
   scoreText: {fileID: 1829915772}
   speed: 5
   attackHitBox: {fileID: 0}
+  playerSounds: {fileID: 0}
+  steps: {fileID: 0}
+  hurt: {fileID: 0}
 --- !u!212 &892704090
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -5,10 +5,11 @@ using UnityEngine;
 public class MovimientoEnemigo : MonoBehaviour
 {
     [SerializeField] Transform[] ruta;
-    [SerializeField] float velocidadMovimiento;
+    [SerializeField] float velocidadMovimiento = 2;
     [SerializeField] int destino;
     [SerializeField] float health, maxhealth = 3;
-    [SerializeField] internal GameObject parent;
+    [SerializeField] AudioSource efecs;
+    //[SerializeField] internal GameObject parent;
     private bool dying = false;
     private Animator animator;
 
@@ -23,7 +24,8 @@ public class MovimientoEnemigo : MonoBehaviour
         if (!dying)
         {
             int next = Random.Range(0, ruta.Length - 1);
-            transform.position = Vector2.MoveTowards(transform.position, ruta[destino].position, velocidadMovimiento * Time.deltaTime);
+            Vector2 step = Vector2.MoveTowards(transform.position, ruta[destino].position, velocidadMovimiento * Time.deltaTime);
+            transform.position = step;
             if (Vector2.Distance(transform.position, ruta[destino].position) < .2f)
             {
                 transform.localScale = new Vector3(1, 1, 1);
@@ -32,6 +34,18 @@ public class MovimientoEnemigo : MonoBehaviour
         }
 
     }
+
+    public void setRuta(Transform[] ruta)
+    {
+        this.ruta = ruta;
+    }
+
+    public void setSpeed(float speed)
+    {
+        velocidadMovimiento = speed;
+    }
+
+    public bool getDying() {  return !dying; }
     public void Danio()
     {
         health--;
@@ -41,6 +55,7 @@ public class MovimientoEnemigo : MonoBehaviour
             dying = true;
             gameObject.GetComponent<Collider2D>().enabled = false;
             transform.GetChild(1).gameObject.SetActive(false);
+            efecs.Play();
             StartCoroutine(dieAnimation());
         } else
         {

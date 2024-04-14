@@ -6,6 +6,7 @@ public class Shooter : MonoBehaviour
 {
     bool friendly = false;
     [SerializeField] float kickForce = 10f;
+    [SerializeField] AudioSource efecs;
     private GameObject soccerBall;
     private bool holding = false;
     private float timer = 0f;
@@ -57,5 +58,6 @@ public class Shooter : MonoBehaviour
         Vector2 direccion = (obj.transform.position - soccerBall.transform.position).normalized;
 
         soccerBall.GetComponent<Rigidbody2D>().velocity = direccion * kickForce;
+        efecs.Play();
     }
 }

@@ -18,11 +18,15 @@ public class Player : MonoBehaviour
     private float attackTimer = 0.5f;
     bool attacking = false;
     private int score;
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
 
 
-    [SerializeField] AudioSource playerSounds;
-    [SerializeField] AudioClip steps;
-    [SerializeField] AudioClip hurt;
+    [SerializeField] AudioSource playerSteps;
+    [SerializeField] AudioSource playerNom;
+    [SerializeField] AudioSource playerHurt;
 
     // Start is called before the first frame update
     void Start()
@@ -47,12 +51,17 @@ public class Player : MonoBehaviour
         else if (horizontal < 0 && !lookingLeft) { girar();}
 
         animator.SetFloat("Movement", Mathf.Abs(horizontal));
+        if (Mathf.Abs(horizontal) < 0.1f)
+        {
+            playerSteps.Play();
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && !attacking)
         {   
             attackHitBox.SetActive(true);
             animator.SetBool("attacking", true);
             attacking = true;
+            playerNom.Play();
             StartCoroutine(attackCoroutine());
         }
 
@@ -74,4 +83,11 @@ public class Player : MonoBehaviour
         transform.localScale = escala;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("bola"))
+        {
+            playerHurt.Play();
+        }
+    }
 }
