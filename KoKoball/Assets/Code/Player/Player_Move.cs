@@ -18,11 +18,6 @@ public class Player : MonoBehaviour
     private float attackTimer = 0.5f;
     bool attacking = false;
     private int score;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-
 
     [SerializeField] AudioSource playerSteps;
     [SerializeField] AudioSource playerNom;
