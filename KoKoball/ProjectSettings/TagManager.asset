@@ -7,6 +7,8 @@ TagManager:
   - KickHitBox
   - enemy
   - bola
+  - DestruirDecoraCion
+  - Bloque
   - land
   layers:
   - Default
@@ -50,6 +52,12 @@ TagManager:
     locked: 0
   - name: Land
     uniqueID: 1567070959
+    locked: 0
+  - name: piso
+    uniqueID: 2677751223
+    locked: 0
+  - name: piso2
+    uniqueID: 79557729
     locked: 0
   - name: Entities
     uniqueID: 1742675649
