@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
             attacking = true;
             playerNom.Play();
             transform.localScale = transform.localScale * 1.5f;
-            transform.position.Set(transform.position.x, transform.position.y +0.15f, transform.position.z);
+            transform.position.Set(transform.position.x, transform.position.y -0.15f, transform.position.z);
             StartCoroutine(attackCoroutine());
             //healthManager.healing(1);
         }

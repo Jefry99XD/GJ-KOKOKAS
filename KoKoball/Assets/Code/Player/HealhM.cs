@@ -40,7 +40,10 @@ public class HealhM : MonoBehaviour
     }
 
     public void healing(int healingV) {
-        health += healingV; healthSlider.health(health);
+        if (health < healthMax)
+        {
+            health += healingV; healthSlider.health(health);
+        }
        
 
     }
