@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class HealhM : MonoBehaviour
 {
+    public HUD hud;
+    private int vidas = 5;
    // [SerializeField]
     private int health;
    // [SerializeField]
@@ -35,6 +37,8 @@ public class HealhM : MonoBehaviour
         if (health <= 0) {
             SceneManager.LoadScene(2);
         }
+        vidas--;
+        hud.quitarVida(vidas);
 
     
     }
@@ -44,6 +48,8 @@ public class HealhM : MonoBehaviour
         {
             health += healingV; healthSlider.health(health);
         }
+        vidas ++;
+        hud.agregarVida(vidas);
        
 
     }
