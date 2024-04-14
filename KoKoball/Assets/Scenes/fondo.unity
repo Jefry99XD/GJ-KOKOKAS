@@ -223,13 +223,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 345647030485224735, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 345647030485224735, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.3410487
+      objectReference: {fileID: 0}
     - target: {fileID: 411704866716256411, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7524123
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 411704866716256411, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14895083
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 411704866716256411, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -263,9 +271,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2531119791838653947, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531119791838653947, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 79557729
+      objectReference: {fileID: 0}
     - target: {fileID: 2897551858716084779, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
       propertyPath: m_Name
       value: fondo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486747925303569559, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486747925303569559, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 79557729
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295212707670690822, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295212707670690822, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366421295679360159, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366421295679360159, guid: 349c8cb5461d05a46ac52475eef6e4b0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 79557729
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
