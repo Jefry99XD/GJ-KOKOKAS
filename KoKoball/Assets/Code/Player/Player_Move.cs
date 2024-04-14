@@ -33,7 +33,8 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        
         healthManager = GetComponent<HealhM>();
         float horizontal = Input.GetAxisRaw("Horizontal");
         Vector2 positionPlayer = transform.position;
@@ -50,7 +51,7 @@ public class Player : MonoBehaviour
             playerSteps.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !attacking)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("0") ) && !attacking)
         {   
             attackHitBox.SetActive(true);
             animator.SetBool("attacking", true);

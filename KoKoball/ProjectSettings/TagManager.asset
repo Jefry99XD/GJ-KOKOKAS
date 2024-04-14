@@ -10,6 +10,7 @@ TagManager:
   - DestruirDecoraCion
   - Bloque
   - land
+  - musica
   layers:
   - Default
   - TransparentFX
