@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
             playerSteps.Play();
         }
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("0") ) && !attacking)
+        if ((Input.GetKeyDown(KeyCode.Space)) && !attacking)
         {   
             attackHitBox.SetActive(true);
             animator.SetBool("attacking", true);
