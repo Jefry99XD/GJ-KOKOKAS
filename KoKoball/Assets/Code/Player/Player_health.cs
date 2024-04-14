@@ -5,25 +5,32 @@ using UnityEngine.UI;
 
 public class Player_health : MonoBehaviour
 {
+    [SerializeField]
     private  Slider slider;
-// Start is called before the first frame update
+    private int max;
+
+    // Start is called before the first frame update
     void Start()
     {
         slider = GetComponent<Slider>();
+        max = (int)slider.maxValue;
     }
 
 
     public void healthMax(int maxV) { 
         slider.maxValue = maxV;
+        max = maxV;
     }
 
     public  void health(int valueH) {
         slider.value = valueH;
     }
 
-    public  void IHealthSilder(int v)
+    public int IHealthSilder()
     {
-        healthMax(v);
-        health(v);
+        max = (int)slider.maxValue;
+        healthMax(max);
+        health(max);
+        return max;
     }
 }

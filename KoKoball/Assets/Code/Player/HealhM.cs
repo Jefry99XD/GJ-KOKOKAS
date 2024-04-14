@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class HealhM : MonoBehaviour
 {
-    [SerializeField]
+   // [SerializeField]
     private int health;
+   // [SerializeField]
+    private int healthMax;
     [SerializeField]
-    public int healthMax;
-    [SerializeField] 
-    private Player_health healthSlider;
+    public Player_health healthSlider;
     // Start is called before the first frame update
     void Start()
     {
-        healthMax = 10;
+        //healthMax = 10;
+        //health = healthMax;
+
+        healthMax = healthSlider.IHealthSilder();
         health = healthMax;
-        healthSlider.IHealthSilder(health);
+        print(health);
     }
 
     // Update is called once per frame
@@ -28,13 +31,13 @@ public class HealhM : MonoBehaviour
     public void damage(int damageV)
     {
         health -= damageV;
-        healthSlider.health(health);
+        //healthSlider.health(health);
     
     }
 
     public void healing(int healingV) {
         health += healingV; healthSlider.health(health);
-        healthSlider.health(health);
+        //healthSlider.health(health);
 
     }
 }

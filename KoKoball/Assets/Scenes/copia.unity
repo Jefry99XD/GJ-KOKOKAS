@@ -1004,8 +1004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461592062c1abbe40bd7e2d96ef77c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  healthMax: 5
   healthSlider: {fileID: 1298911854}
 --- !u!1 &960078916
 GameObject:
@@ -1570,9 +1568,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 10
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1834,7 +1832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Score: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
