@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealhM : MonoBehaviour
 {
@@ -18,7 +20,6 @@ public class HealhM : MonoBehaviour
 
         healthMax = healthSlider.IHealthSilder();
         health = healthMax;
-        print(health);
     }
 
     // Update is called once per frame
@@ -32,7 +33,7 @@ public class HealhM : MonoBehaviour
     {
         health -= damageV;
         if (health <= 0) {
-            print("HAs perdido");
+            SceneManager.LoadScene(3);
         }
 
     

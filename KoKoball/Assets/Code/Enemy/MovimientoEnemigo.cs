@@ -55,6 +55,7 @@ public class MovimientoEnemigo : MonoBehaviour
         {
             efecs.Play();
             animator.SetBool("kill", true);
+            efecs.Play();
             dying = true;
             gameObject.GetComponent<Collider2D>().enabled = false;
             //transform.GetChild(1).gameObject.SetActive(false);
