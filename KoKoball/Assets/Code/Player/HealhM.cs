@@ -45,9 +45,10 @@ public class HealhM : MonoBehaviour
         {
             health += healingV; healthSlider.health(health);
         }
-        vidas ++;
+        
         hud.agregarVida(vidas);
-       
+        vidas++;
+
 
     }
 }
