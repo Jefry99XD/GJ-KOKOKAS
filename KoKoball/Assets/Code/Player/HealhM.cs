@@ -33,7 +33,7 @@ public class HealhM : MonoBehaviour
     {
         health -= damageV;
         if (health <= 0) {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
 
     
