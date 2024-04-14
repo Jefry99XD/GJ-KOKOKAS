@@ -7,6 +7,7 @@ TagManager:
   - KickHitBox
   - enemy
   - bola
+  - land
   layers:
   - Default
   - TransparentFX

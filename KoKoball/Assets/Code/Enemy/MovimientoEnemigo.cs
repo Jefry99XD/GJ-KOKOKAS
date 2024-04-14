@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovimientoEnemigo : MonoBehaviour
@@ -9,9 +10,11 @@ public class MovimientoEnemigo : MonoBehaviour
     [SerializeField] int destino;
     [SerializeField] float health = 3;
     [SerializeField] AudioSource efecs;
+    [SerializeField] bool healer = false;
     //[SerializeField] internal GameObject parent;
     private bool dying = false;
     private Animator animator;
+    private Vector2 target;
 
 
     void Start()
@@ -25,13 +28,25 @@ public class MovimientoEnemigo : MonoBehaviour
     {
         if (!dying)
         {
-            int next = Random.Range(0, ruta.Length - 1);
-            Vector2 step = Vector2.MoveTowards(transform.position, ruta[destino].position, velocidadMovimiento * Time.deltaTime);
-            transform.position = step;
-            if (Vector2.Distance(transform.position, ruta[destino].position) < .2f)
+            if (healer && health == 1)
             {
-                transform.localScale = new Vector3(1, 1, 1);
-                destino = next;
+                Vector2 step = Vector2.MoveTowards(transform.position, target, velocidadMovimiento * Time.deltaTime);
+                transform.position = step;
+                if (Vector2.Distance(transform.position, target) < .01f)
+                {
+                    Danio();
+                }
+            }
+            else
+            {
+                int next = Random.Range(0, ruta.Length - 1);
+                Vector2 step = Vector2.MoveTowards(transform.position, ruta[destino].position, velocidadMovimiento * Time.deltaTime);
+                transform.position = step;
+                if (Vector2.Distance(transform.position, ruta[destino].position) < .2f)
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                    destino = next;
+                }
             }
         }
 
@@ -65,6 +80,22 @@ public class MovimientoEnemigo : MonoBehaviour
             animator.SetBool("hurt", true);
             StartCoroutine(takeDamage());
         }
+        if (healer && health == 1)
+        {
+            velocidadMovimiento = 5;
+            target = GameObject.FindGameObjectWithTag("Player").transform.position;
+        }
+
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<HealhM>().healing(1);
+            Danio();
+        }
     }
 
     IEnumerator takeDamage()
@@ -80,7 +111,6 @@ public class MovimientoEnemigo : MonoBehaviour
         Destroy(gameObject);
         //Destroy(parent);
         ScoreManager.score += 1;
-       
 
     }
 }
