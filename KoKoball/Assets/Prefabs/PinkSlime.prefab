@@ -225,6 +225,7 @@ MonoBehaviour:
   destino: 0
   health: 3
   efecs: {fileID: 8113972063834374319}
+  healer: 0
 --- !u!1 &7218599803104902761
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,8 +297,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1742675649
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1034519751, guid: 108a65cddd08a5d4783d63d1afb7ddca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
