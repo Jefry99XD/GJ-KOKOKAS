@@ -56,6 +56,9 @@ TagManager:
   - name: piso
     uniqueID: 2677751223
     locked: 0
+  - name: piso2
+    uniqueID: 79557729
+    locked: 0
   - name: Entities
     uniqueID: 1742675649
     locked: 0
