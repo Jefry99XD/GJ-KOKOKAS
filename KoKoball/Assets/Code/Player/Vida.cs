@@ -13,17 +13,17 @@ public class Player_health : MonoBehaviour
     }
 
 
-    public void healthMax(int max) { 
-        slider.maxValue = max;
+    public void healthMax(int maxV) { 
+        slider.maxValue = maxV;
     }
 
     public  void health(int valueH) {
         slider.value = valueH;
     }
 
-    public  void IHealthSilder(int value)
+    public  void IHealthSilder(int v)
     {
-        healthMax(value);
-        health(value);
+        healthMax(v);
+        health(v);
     }
 }
